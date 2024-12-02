@@ -1,18 +1,19 @@
 import Button from "../utils/Button";
+import { HiBars3 } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
-    <nav className="pt-5 bg-mainBg">
+    <nav className="py-5 bg-mainBg">
       <section className="container mx-auto">
-        <main className="flex items-center justify-between">
+        <main className="flex items-center justify-between px-2 md-px-0">
           <section>
-            <h2 className="text-purple-800 text-2xl font-bold font-sora">
+            <h2 className="text-purple-800 text-xl md:text-2xl font-bold font-sora">
               kmSaifullah
             </h2>
           </section>
           <section>
             <section className="flex items-center gap-x-5">
-              <ul className="flex items-center gap-x-6">
+              <ul className="hidden lg:flex items-center gap-x-6 ">
                 <li className="text-navLink text-base font-normal font-sora cursor-pointer">
                   About
                 </li>
@@ -35,7 +36,10 @@ const Navbar = () => {
                   Contact
                 </li>
               </ul>
-              <Button title="Contact me" />
+              <Button title="Contact Me" />
+              <div className="block lg:hidden">
+                <HiBars3 className="text-4xl text-priamry cursor-pointer" />
+              </div>
             </section>
           </section>
         </main>
