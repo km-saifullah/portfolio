@@ -1,7 +1,13 @@
+import { useState } from "react";
 import Button from "../utils/Button";
-import { HiBars3 } from "react-icons/hi2";
+import { HiBars3, HiXMark } from "react-icons/hi2";
 
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen((prev) => !prev);
+  };
   return (
     <nav className="py-5 bg-mainBg">
       <section className="container mx-auto">
@@ -38,9 +44,57 @@ const Navbar = () => {
               </ul>
               <Button title="Contact Me" />
               <div className="block lg:hidden">
-                <HiBars3 className="text-4xl text-priamry cursor-pointer" />
+                <HiBars3
+                  className="text-4xl text-secondary cursor-pointer"
+                  onClick={toggleSidebar}
+                />
               </div>
             </section>
+            <div
+              className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+                isSidebarOpen ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
+              <div className="flex justify-between items-center px-4 py-3">
+                <h2 className="text-xl font-semibold text-secondary">
+                  kmSaifullah
+                </h2>
+                <HiXMark
+                  className="text-3xl text-primary cursor-pointer"
+                  onClick={toggleSidebar}
+                />
+              </div>
+              <nav className="mt-4">
+                <ul className="space-y-4 px-4">
+                  <li>
+                    <a href="#home" className="block text-lg text-gray-700">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about" className="block text-lg text-gray-700">
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#services" className="block text-lg text-gray-700">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" className="block text-lg text-gray-700">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              {isSidebarOpen && (
+                <div
+                  className="fixed inset-0 bg-primary bg-opacity-10"
+                  onClick={toggleSidebar}
+                ></div>
+              )}
+            </div>
           </section>
         </main>
       </section>
