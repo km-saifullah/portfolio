@@ -5,6 +5,7 @@ import { RiGithubFill } from "react-icons/ri";
 import { FaDev } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import avatar from "/saifullah.jpg";
+import { motion } from "motion/react";
 
 const socialLinks = [
   {
@@ -19,7 +20,12 @@ const socialLinks = [
 
 const Banner = () => {
   return (
-    <main className="py-10">
+    <motion.main
+      className="py-20"
+      initial={{ y: 10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
       <section className="container mx-auto">
         <section className="flex items-center justify-between flex-col lg:flex-row gap-y-8 lg:gap-y-0">
           <section className="space-y-2 lg:space-y-5">
@@ -71,7 +77,7 @@ const Banner = () => {
           </section>
         </section>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

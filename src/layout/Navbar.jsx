@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsSidebarOpen((prev) => !prev);
   };
   return (
-    <nav className="py-5 bg-mainBg">
+    <nav className="py-8 bg-mainBg">
       <section className="container mx-auto">
         <main className="flex items-center justify-between px-2 md-px-0">
           <section>

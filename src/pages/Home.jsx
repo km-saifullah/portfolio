@@ -1,9 +1,10 @@
-import { Banner } from "../sections";
+import { Banner, Services } from "../sections";
 
 const Home = () => {
   return (
     <div>
       <Banner />
+      <Services />
     </div>
   );
 };
