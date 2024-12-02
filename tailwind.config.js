@@ -7,6 +7,7 @@ export default {
         primary: "#A983F9",
         secondary: "#222222",
         navLink: "#3A1E70",
+        textColor: "rgba(34, 34, 34, 0.8)",
       },
       backgroundImage: {
         mainBg: "linear-gradient(to right, #FFFFFF, #E9DFFD)",

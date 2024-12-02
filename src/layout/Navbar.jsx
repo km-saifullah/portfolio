@@ -51,7 +51,7 @@ const Navbar = () => {
               </div>
             </section>
             <div
-              className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+              className={`fixed z-10 top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
                 isSidebarOpen ? "translate-x-0" : "translate-x-full"
               }`}
             >
@@ -90,7 +90,7 @@ const Navbar = () => {
               </nav>
               {isSidebarOpen && (
                 <div
-                  className="fixed inset-0 bg-primary bg-opacity-10"
+                  className="fixed inset-0 bg-primary bg-opacity-10 cursor-pointer"
                   onClick={toggleSidebar}
                 ></div>
               )}
