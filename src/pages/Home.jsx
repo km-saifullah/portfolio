@@ -1,10 +1,11 @@
-import { Banner, Services } from "../sections";
+import { Banner, Services, Skills } from "../sections";
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <Services />
+      <Skills />
     </div>
   );
 };

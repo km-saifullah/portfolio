@@ -24,21 +24,21 @@ const serviceData = [
 const Services = () => {
   return (
     <motion.main
-      className="bg-[#F6F3FC] py-16"
+      className="bg-serviceBg py-16"
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
       <section className="container mx-auto">
         <section>
-          <h2 className="heading text-secondary">Services</h2>
+          <h2 className="heading text-white">Services</h2>
         </section>
         <section className="py-8">
           <section className="space-y-6">
             {serviceData.map((service) => (
               <section
                 key={service.id}
-                className="bg-[#9F6FFB] p-7 flex items-center justify-between flex-wrap gap-5 text-white"
+                className="bg-white p-7 flex items-center justify-between flex-wrap gap-5 text-secondary"
               >
                 <div className="text-2xl font-bold font-sora">
                   0{service.id}

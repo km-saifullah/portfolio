@@ -29,13 +29,13 @@ const Banner = () => {
       <section className="container mx-auto">
         <section className="flex items-center justify-between flex-col lg:flex-row gap-y-8 lg:gap-y-0">
           <section className="space-y-2 lg:space-y-5">
-            <h2 className="text-2xl lg:text-4xl text-textColor font-sora font-bold leading-[54px] text-center lg:text-left">
+            <h2 className="text-2xl lg:text-4xl text-white font-sora font-bold leading-[54px] text-center lg:text-left">
               This is Khaled Md Saifullah
             </h2>
-            <h1 className="px-2 lg:px-0 w-full lg:w-[521px] text-4xl lg:text-[60px] text-secondary font-bold font-sora leading-[45px] lg:leading-[72px] text-center lg:text-left">
+            <h1 className="px-2 lg:px-0 w-full lg:w-[521px] text-4xl lg:text-[60px] text-white font-bold font-sora leading-[45px] lg:leading-[72px] text-center lg:text-left">
               I am a <span className="text-primary">MERN</span> Stack Developer
             </h1>
-            <p className="px-2 lg:px-0 w-full lg:w-[520px] text-textColor text-base font-normal font-sora leading-[26px] text-center lg:text-left">
+            <p className="px-2 lg:px-0 w-full lg:w-[520px] text-white text-base font-normal font-sora leading-[26px] text-center lg:text-left">
               Experienced MERN stack developer dedicated to creating captivating
               web experiences proficient in MongoDB, Express.js, React.js and
               Node.js technologies
